@@ -1,0 +1,1 @@
+int doInput(int state);
