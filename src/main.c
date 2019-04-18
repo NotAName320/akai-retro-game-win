@@ -4,6 +4,8 @@
 
 #include <SDL2/SDL.h>
 
+#include "main.h"
+
 static int width = 960;
 static int height = 540;
 
@@ -11,8 +13,9 @@ int r;
 int g;
 int b;
 
-int main(int argc, char **argv) {
 
+int main(int argc, char **argv) {
+  
   SDL_Init(SDL_INIT_VIDEO);
 
   // Create renderer and window
@@ -23,31 +26,39 @@ int main(int argc, char **argv) {
   bool running = true;
   SDL_Event event;
   
+  enum gameState currentGameState = TITLE_STATE;
+  
   while (running) {
 
-    while (SDL_PollEvent(&event)) {
+    switch (currentGameState) {
 
-      switch (event.type) {
+      case TITLE_STATE:
+        while (SDL_PollEvent(&event)) {
 
-        case SDL_QUIT:
-	  running = false;
-	  break;
-        case SDL_MOUSEBUTTONDOWN:
-	  r = rand() % 255;
-	  g = rand() % 255;
-	  b = rand() % 255;
+	  switch (event.type) {
 
-	  SDL_SetRenderDrawColor(renderer, r, g, b, 255);
-	  break;
+            case SDL_QUIT:
+	      running = false;
+	      break;
+            case SDL_MOUSEBUTTONDOWN:
+	      r = rand() % 255;
+	      g = rand() % 255;
+	      b = rand() % 255;
+	      
+	      SDL_SetRenderDrawColor(renderer, r, g, b, 255);
+	      break;
 	  
-        }
+          }
 
-    SDL_RenderClear(renderer);
-    SDL_RenderPresent(renderer);
+	  SDL_RenderClear(renderer);
+	  SDL_RenderPresent(renderer);
     
+        }
+	break;
     }
 
   }
+  
   SDL_DestroyRenderer(renderer);
   SDL_DestroyWindow(window);
   SDL_Quit();
