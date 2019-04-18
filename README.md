@@ -13,6 +13,7 @@ Download or clone the repository and type the following into a terminal emulator
 (Replace "path/to/folder" with the actual path).
 
 `cd path/to/folder`
+
 `make`
 
 Run the program with `./retrogame`
