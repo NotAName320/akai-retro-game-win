@@ -8,9 +8,7 @@
 
 NOTE: Make sure to install `libsdl2` before compilation.
 
-Download or clone the repository and type the following into a terminal emulator.
-
-(Replace "path/to/folder" with the actual path).
+Download or clone the repository and type the following into a terminal.
 
 `cd path/to/folder`
 
