@@ -1,6 +1,2 @@
-#include "main.h"
-
-int titleLoop(int event){
-
-  return 1;
-}
+#include "common.h"
+//Will add functions for Title State

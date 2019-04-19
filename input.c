@@ -2,7 +2,7 @@
 
 int doInput(int state){
   SDL_Event event;
-  void (*stateInputFunc[])(int) = { doTitleInput, doTitleInput };
+  void (*stateInputFunc[])(int) = {doTitleInput};
   while (SDL_PollEvent(&event)) {
     if(event.type == SDL_QUIT)
       return 0;
