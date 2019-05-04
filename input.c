@@ -1,25 +1,32 @@
 #include "input.h"
+#include "title.h"
 
 int doInput(int state){
   SDL_Event event;
-  void (*stateInputFunc[])(int) = {doTitleInput};
+  void (*stateInputFunc[])(SDL_Event) = {doTitleInput};
   while (SDL_PollEvent(&event)) {
     if(event.type == SDL_QUIT)
       return 0;
   }
-  (*stateInputFunc[state])(event.type);
+  (*stateInputFunc[state])(event);
   return 1;
 }
 
-void doTitleInput(int event){
-  int r, g, b;
-  switch (event) {
-  case SDL_MOUSEBUTTONDOWN:
-    r = rand() % 255;
-    g = rand() % 255;
-    b = rand() % 255;
+void doTitleInput(SDL_Event event) {
+  
+  switch (event.type) {
+  case SDL_KEYDOWN:
+
+    switch (event.key.keysym.sym) {
+    case SDLK_DOWN:
     
-    SDL_SetRenderDrawColor(app.renderer, r, g, b, 255);
+      drawTitle();
+      break;
+      
+    }
+    
     break;
+    
   }
+  
 }

@@ -1,5 +1,5 @@
 #include "common.h"
 
-void doTitleInput(int event);
+void doTitleInput(SDL_Event event);
 
 extern App app;
