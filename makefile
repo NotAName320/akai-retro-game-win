@@ -1,4 +1,4 @@
 CC=gcc
 
-rms-platformer: main.c
+akai-retro-game: main.c
 	$(CC) -o akai *.c -lSDL2 -lSDL2_image
