@@ -18,14 +18,18 @@ void doTitleInput(SDL_Event event) {
   case SDL_KEYDOWN:
 
     switch (event.key.keysym.sym) {
-    case SDLK_DOWN:
+    case SDLK_q:
     
       drawTitle();
       break;
       
+    case SDLK_2:
+
+      drawManual();
+      break;
+
     }
-    
-    break;
+   
     
   }
   
