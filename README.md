@@ -15,6 +15,7 @@ Binaries and/or installers have not been published yet. If you are interested in
 For your convinience, the libraries we used in this project have been listed below:
 
 `libsdl2 <SDL2/SDL.h>`
+
 `libsdl2-image <SDL2/SDL_image.h>`
 
 Make sure these libraries are installed before attempting to compile the project.
@@ -34,19 +35,25 @@ This project is the result of the combined efforts of multiple people.
 ### Game Design
 
 Andrew Vavrunek (lead)
+
 Kevin Leung
+
 Lucky Hong
+
 Rishi Veerepalli
 
 ### Programming
 
 Ian Loam (lead)
+
 Rishi Veerepalli (lead)
 
 ### Art
 
 Tian Schmidt (lead)
+
 Kevin Leung
+
 Mikella Nuzen
 
 ### UX Design
