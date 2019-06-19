@@ -1,19 +1,54 @@
-# retro-game
+# akai-retro-game
 
-2D retro fighter game based on SDL2.
+## Development Status
 
-## Running/Installing
+As of June 18th, 2019, this repository is active.
 
-### Run from source (Linux)
+## Installation
 
-NOTE: Make sure to install `libsdl2` before compilation.
+### Binary Installation
+
+Binaries and/or installers have not been published yet. If you are interested in experimenting with this game while it is still in development, proceed to *Compilation*.
+
+### Compilation
+
+For your convinience, the libraries we used in this project have been listed below:
+
+`libsdl2 <SDL2/SDL.h>`
+`libsdl2-image <SDL2/SDL_image.h>`
+
+Make sure these libraries are installed before attempting to compile the project.
 
 Download or clone the repository and type the following into a terminal.
 
-`cd path/to/folder`
+```
+cd path/to/akai-retro-game
+make
+./akai
+```
 
-`make`
+## Credits
 
-Run the program with `./retrogame`
+This project is the result of the combined efforts of multiple people.
 
-You could also compile manually with `gcc`. Make sure to include `-lSDL2` or the program will not compile.
+### Game Design
+
+Andrew Vavrunek (lead)
+Kevin Leung
+Lucky Hong
+Rishi Veerepalli
+
+### Programming
+
+Ian Loam (lead)
+Rishi Veerepalli (lead)
+
+### Art
+
+Tian Schmidt (lead)
+Kevin Leung
+Mikella Nuzen
+
+### UX Design
+
+Lucky Hong
