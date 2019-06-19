@@ -8,7 +8,7 @@ As of June 18th, 2019, this repository is active.
 
 ### Binary Installation
 
-Binaries and/or installers have not been published yet. If you are interested in experimenting with this game while it is still in development, proceed to *Compilation*.
+Binaries and/or installers have not been published yet. If you are interested in experimenting with this game while it is still in development, proceed to **Compilation**.
 
 ### Compilation
 
