@@ -44,9 +44,7 @@ This project is the result of the combined efforts of multiple people.
 ### Art
 
 - Tian Schmidt (lead)
-
-Kevin Leung
-
+- Kevin Leung
 - Mikella Nuzen
 
 ### UX Design
