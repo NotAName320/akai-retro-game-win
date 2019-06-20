@@ -35,6 +35,7 @@ This project is the result of the combined efforts of multiple people.
 - Kevin Leung
 - Lucky Hong
 - Rishi Veerepalli
+- Chase Fingerson
 
 ### Programming
 
