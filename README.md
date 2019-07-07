@@ -40,7 +40,7 @@ This project is the result of the combined efforts of multiple people.
 ### Programming
 
 - Ian Loam (lead)
-- Rishi Veerepalli (inferior lead)
+- Rishi Veerepalli (lead)
 
 ### Art
 
