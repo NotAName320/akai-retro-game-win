@@ -6,18 +6,38 @@ As of June 18th, 2019, this repository is active.
 
 ## Installation
 
-### Binary Installation
+### Binaries
 
-Binaries and/or installers have not been published yet. If you are interested in experimenting with this game while it is still in development, proceed to **Compilation**.
+Binaries and/or installers have not been published yet. If you are interested in experimenting with this game while it is still in development, proceed to [building from source](#build-from-source).
 
-### Compilation
+### Build from source
 
-For your convinience, the libraries we used in this project have been listed below:
+#### Prerequisites (Linux)
 
-`libsdl2 <SDL2/SDL.h>`  
-`libsdl2-image <SDL2/SDL_image.h>`
+We use `libsdl2` and `libsdl-image` in this project. Please make sure you install them before compiling. You can usually find them in your package manager as:
 
-Make sure these libraries are installed before attempting to compile the project. Then, download or clone the repository and type the following into a terminal.
+##### SDL
+
+* `libsdl2`
+* `sdl2`
+* `sdl2`
+
+##### SDL-Image
+
+* `libsdl2-image`
+* `sdl2-image`
+* `sdl2_image`
+
+#### Prerequisites (macOS)
+
+Before compiling, make sure to install [Homebrew](https://brew.sh/) on your system. This is necessary to install the libraries.
+After installing Homebrew, install the required libraries by running the following command:
+
+```brew install sdl2 sdl2_image```
+
+#### Building
+
+Once the libraries are installed, you can proceed to build and run the program.
 
 ```
 cd path/to/akai-retro-game
