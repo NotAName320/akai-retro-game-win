@@ -2,7 +2,7 @@
 
 ## Development Status
 
-As of June 18th, 2019, this repository is active.
+As of August 29th, 2019, this repository is active.
 
 ## Installation
 
@@ -34,7 +34,7 @@ Before compiling, make sure to install [Homebrew](https://brew.sh/) on your syst
 After installing Homebrew, install the required libraries by running the following command:
 
 ```brew install sdl2 sdl2_image```
-
+```
 #### Building
 
 Once the libraries are installed, you can proceed to build and run the program.
@@ -43,4 +43,14 @@ Once the libraries are installed, you can proceed to build and run the program.
 cd path/to/akai-retro-game
 make
 ./akai
+```
+
+####Prerequisites (Windows)
+You must have [MinGW](http://www.mingw.org/), and [SDL2](https://www.libsdl.org/download-2.0.php) and [SDL2_img](https://www.libsdl.org/projects/SDL_image/).
+
+After installing, simply run the makefile.
+```
+cd <installation-dir>\
+make
+akai
 ```
