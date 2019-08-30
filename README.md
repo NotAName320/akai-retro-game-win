@@ -50,7 +50,7 @@ make
 
 Or on Windows:
 ```
-cd <installation-dir>
+cd C:\<installation-dir>
 make
 akai
 ```
