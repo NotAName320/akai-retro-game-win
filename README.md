@@ -35,6 +35,9 @@ After installing Homebrew, install the required libraries by running the followi
 
     brew install sdl2 sdl2_image
 
+####Prerequisites (Windows)
+You must have [MinGW](http://www.mingw.org/), and [SDL2](https://www.libsdl.org/download-2.0.php) and [SDL2_image](https://www.libsdl.org/projects/SDL_image/) (Install the Windows MinGW Development libraries).
+
 ####Building
 
 Once the libraries are installed, you can proceed to build and run the program.
@@ -44,10 +47,8 @@ cd path/to/akai-retro-game
 make
 ./akai
 ```
-####Prerequisites (Windows)
-You must have [MinGW](http://www.mingw.org/), and [SDL2](https://www.libsdl.org/download-2.0.php) and [SDL2_img](https://www.libsdl.org/projects/SDL_image/).
 
-After installing, simply run the makefile.
+Or on Windows:
 ```
 cd <installation-dir>
 make
