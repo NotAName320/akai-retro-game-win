@@ -44,30 +44,3 @@ cd path/to/akai-retro-game
 make
 ./akai
 ```
-
-## Credits
-
-This project is the result of the combined efforts of multiple people.
-
-### Game Design
-
-- Andrew Vavrunek (lead)
-- Kevin Leung
-- Lucky Hong
-- Rishi Veerepalli
-- Chase Fingerson
-
-### Programming
-
-- Ian Loam (lead)
-- Rishi Veerepal1i (lead)
-
-### Art
-
-- Tian Schmidt (lead)
-- Kevin Leung
-- Mikella Nuzen
-
-### UX Design
-
-- Lucky Hong
