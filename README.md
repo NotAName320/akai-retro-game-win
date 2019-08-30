@@ -43,7 +43,7 @@ Once the libraries are installed, you can proceed to build and run the program.
 cd path/to/akai-retro-game
 make
 ./akai
-```
+
 
 ####Prerequisites (Windows)
 You must have [MinGW](http://www.mingw.org/), and [SDL2](https://www.libsdl.org/download-2.0.php) and [SDL2_img](https://www.libsdl.org/projects/SDL_image/).
