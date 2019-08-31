@@ -1,6 +1,6 @@
 #include "main.h"
 
-int main(){
+int main(int argc, char *argv[]){
   int running = 1;
   currentState = TITLE_STATE;
   memset(&app, 0, sizeof(App));
