@@ -36,7 +36,7 @@ After installing Homebrew, install the required libraries by running the followi
     brew install sdl2 sdl2_image
 
 #### Prerequisites (Windows)
-You must have [MinGW](http://www.mingw.org/), and [SDL2](https://www.libsdl.org/download-2.0.php) and [SDL2_image](https://www.libsdl.org/projects/SDL_image/) (Install the Windows MinGW Development libraries).
+You must have [MinGW](http://www.mingw.org/), and [SDL2](https://www.libsdl.org/download-2.0.php) and [SDL2_image](https://www.libsdl.org/projects/SDL_image/) (Install the Windows MinGW Development libraries, and use the i686 (32-bit) versions).
 
 #### Building
 
