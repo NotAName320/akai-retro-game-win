@@ -14,12 +14,11 @@ int doInput(int state){
 
 void doTitleInput(SDL_Event event) {
   
-  switch (event.type) {
+  switch (event.key.keysym.sym) {
   case SDL_KEYDOWN:
 
-    switch (event.key.keysym.sym) {
-    case SDLK_q:
-    
+    case SDLK_1:
+
       drawTitle();
       break;
       
@@ -28,9 +27,6 @@ void doTitleInput(SDL_Event event) {
       drawManual();
       break;
 
-    }
-   
-    
   }
-  
+     
 }

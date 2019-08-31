@@ -3,34 +3,45 @@
 
 //Will add functions for Title State
 
-void drawTitle() {
+// Title
+SDL_Surface* title = NULL;
+SDL_Surface* title_optimized = NULL;
+SDL_Rect stretchRect;
 
-  SDL_Surface* title = NULL;
-  SDL_Surface* title_optimized = NULL;
+// Manual
+SDL_Surface* manual = NULL;
+SDL_Surface* manual_optimized = NULL;
   
+
+void loadTitle() {
+
   title = IMG_Load( "assets/graphics/title.png" );
   title_optimized = SDL_ConvertSurface( title, app.surface->format, 0);
+  stretchRect.x = 0;
+  stretchRect.y = 0;
+  stretchRect.w = WINDOW_LENGTH;
+  stretchRect.h = WINDOW_HEIGHT;
   
-  printf("IMG_Load: %s\n", IMG_GetError());
-  SDL_BlitSurface( title_optimized, 0, app.surface, 0 );
-  SDL_UpdateWindowSurface(app.window);
-  
-  SDL_Delay(2000);
-   
 }
 
-void drawManual() {
+void loadManual() {
 
-  SDL_Surface* manual = NULL;
-  SDL_Surface* manual_optimized = NULL;
-
-  manual = IMG_Load( "assets/graphics/readme.png" );
+  manual = IMG_Load( "assets/graphics/manual.png" );
   manual_optimized = SDL_ConvertSurface( manual, app.surface->format, 0);
-  SDL_FreeSurface(manual);
-  
+
+}
+
+void drawTitle() {
+
+  SDL_BlitScaled( title_optimized, NULL, app.surface, &stretchRect );
+  SDL_UpdateWindowSurface(app.window);
+ 
+}
+
+
+void drawManual() {
+   
   SDL_BlitSurface ( manual_optimized, NULL, app.surface, NULL );
   SDL_UpdateWindowSurface(app.window);
-
-  SDL_Delay(2000);
   
 }
