@@ -19,12 +19,14 @@ We use `libsdl2` and `libsdl-image` in this project. Please make sure you instal
 ##### SDL
 
 * `libsdl2`
+* `libsdl2-dev`
 * `sdl2`
 * `sdl2`
 
 ##### SDL-Image
 
 * `libsdl2-image`
+* `libsdl2-image-dev`
 * `sdl2-image`
 * `sdl2_image`
 
